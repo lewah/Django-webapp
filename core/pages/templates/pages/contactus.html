@@ -1,0 +1,99 @@
+{% extends "pages/base.html" %}
+
+{% load static %} 
+
+{% block content %}
+<section class="hero">
+    <div class="px-4 py-5  text-center"
+    style="height: 297px;">
+         <!-- pagination section -->
+        <h1 class="display-5 fw-bold col-lg-6 mx-auto">Contact Us</h1>
+        <ol class="breadcrumb bg-transparent justify-content-center py-3">
+            <li class="breadcrumb-item">
+              <a href="{% url 'home'%}">
+                <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item "> Contact Us</li>
+          </ol>
+      </div>
+</section>
+
+<section>
+    <div class="card-columns position-relative  "> 
+      <div class="card mx-auto border-0 ">
+        <div class="" >
+          <a href="">
+              <img src="{% static 'img/randoms/online.png' %}" class="kb3">
+            </a>
+          <!-- <a href=""><img src="{% static 'img/ssl-logo (2).png' %}" class="kb"></a> -->
+          <!-- <a href=""><img src="{% static 'img/ssl-logo (2).png' %}" class="headset"></a>
+          <a href=""><img src="{% static 'img/ssl-logo (2).png' %}" class="mobo"></a> -->
+        </div>
+      </div>
+    </div>
+</section>
+
+<section>
+    <div class="container1">
+        <div class="form1">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text"> Contact us with the following details. and fillup the form with the details. </p>
+                <div class="info">
+                    <div class="social-information"> <i class="fa fa-map-marker"></i>
+                        <p>Netcom Villa, Woodley, Mugo Kibiru Road Off Ngong Road, Nairobi</p>
+                    </div>
+                    <div class="social-information"> 
+                        {% comment %} <i class="fa fa-envelope-o"></i> {% endcomment %}
+                        <i class="fa-solid fa-globe"></i>
+                        <p>simlogic@simlogic.co.ke</p>
+                    </div>
+                    <div class="social-information"> 
+                        <i class="fa fa-mobile-phone"></i> 
+                        
+                        <p>+254 794584324 <br>+254 777771192</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons"> 
+                        
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a> 
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a> 
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i> 
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info-form"> 
+                <span class="circle one"></span> 
+                <span class="circle two"></span>
+                <!-- <form action="#" onclick="return false;" autocomplete="off"> -->
+                <form action="#" onclick="" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="social-input-containers"> 
+                        <input type="text" name="name" class="input" placeholder="Name" /> </div>
+                    <div class="social-input-containers"> 
+                        <input type="email" name="email" class="input" placeholder="Email" /> </div>
+                    <div class="social-input-containers"> 
+                        <input type="tel" name="phone" class="input" placeholder="Phone" /> </div>
+                    <div class="social-input-containers textarea"> 
+                        <textarea name="message" class="input" placeholder="Message"></textarea> </div> 
+                        <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

@@ -1,0 +1,169 @@
+{% extends "pages/base.html" %}
+{% load static %} 
+{% block content %}
+<!-- Hero section &  add paginator in this section -->
+<section class="hero">
+    <div class="px-4 py-5 text-center my-2">
+        <h1 class="display-5 fw-bold font text-uppercase">Providing IT solutions to grow your Business</h1>
+        <div class="col-lg-6 mx-auto">
+          <h2 class="lead mb-4">Simlogic Solutions is an SAP Partner that delivers successful projects to specified scope, time and budget, and an approach to deliver value throughout the engagement.</h2>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 ">Contact Us</button>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- customer logo  -->
+<section class="logo-list our-clients">
+    <div class="container">
+      <div class="col-lg-6 mx-auto text-center">
+        <h2 class="py-5 text-uppercase text-primary ">our customers</h2>
+      </div>
+        <div class="row my-3">
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/unga1.png' %}" alt="Unga limited" class="img-fluid" ></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/madison1.png' %}" alt="Madison Insurance" class="img-fluid" ></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/bakhresa1.png' %}" alt="Bakhresa" class="img-fluid" ></a>
+            </div>
+           
+             <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/Logo-UP.jpg' %}" class="img-fluid" alt="United Pharma"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/alaflogo.jpeg' %}" class="img-fluid" alt="ALAF"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/KPClogo.jpeg' %}" class="img-fluid" alt="KPC"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/rangechem.jpeg' %}" class="img-fluid" alt="Rangechem"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/rereclogo.png' %}" class="img-fluid" alt="REREC"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/SIMBACEMENTLOGO.png' %}" class="img-fluid" alt="REREC"></a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="#"><img src="{% static 'img/savanacementlogo.jpeg' %}" class="img-fluid" alt="REREC"></a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- sonme info section -->
+<section>
+    <div class="card mx-5 my-5 border-0 " style="max-width: 1460px;">
+        <div class="row g-0 ">
+          <div class="col-md-4">
+            <img src="{% static 'img/randoms/urbanoffice.png' %}" class="img-fluid rounded-start mx-3" style="max-width: 600px;" alt="simlogic solutions">
+          </div>
+          <div class="col-md-8 " style="max-width: 850px;">
+            <div class="card-body mx-3 my-4  ">
+              <p class="text-center mx-5 px-5 ">Simlogic Solutions Limited (Simlogic) is a leading East African Information Technology (IT) firm that was established in 2013 by former managers from Accenture, SAP, IBM and Deloitte. 
+                Simlogic has become a specialized solution provider - with excellent references toprovide 
+                IT Solutions and Services.</p>
+              <p class="text-center mx-5 px-5">At Simlogic, we offer you a complete business solution with implementation of our solutions, 
+                    as a holistic ERP solution, IT hardware, and customized software development, a data center to facilitate hosting, 
+                    maintenance, support and training. Due to deep experience in business Management consulting, Simlogic seeks to understand 
+                    the business strategy first and then align it to the IT strategy.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- coounter, fun-->
+<section class="fun wrapper">
+    <div class="container text-center">
+      <div class=" ">
+            <div class="row item-1">
+                <div class="col-sm-12">
+                    <div class="title-box text-uppercase">
+                        <p class="section-subtitle ">We are known by</p>
+                        <h2 class="section-title">Who we are</h2>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-4">
+                    <div class="fun-box">
+                        <h3 class="fun-number ">50+</h3>
+                        <p class="fun-title">Totall Projects</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="fun-box">
+                        <h3 class="fun-number">80+</h3>
+                        <p class="fun-title">Active Clients</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="fun-box">
+                        <h3 class="fun-number">100+</h3>
+                        <p class="fun-title">Refferals</p>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </div>
+</section>
+<!-- second carousel wrapper(testimonials) -->
+<section>
+  <div class="container py-4 my-5" id="testimonial">
+    <div class="row justify-content-center ">
+        <!-- card 1 -->
+        <div class="col-md-3 t-card-1 mx-2 border-top">
+            <div class="card d-flex mx-auto border-0 px-2 " id="card-main">
+                <div class="card-image"> 
+                    <img class="img-fluid d-flex mx-auto" src=""> 
+                </div>
+                <div class="card-text ">
+                    <div class="card-title text-center my-4 text-primary">SAP ERP</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer text-center my-3"> 
+                    <span class=" "id="name">Micheal Smith<br></span>  
+                    <span id="position">CEO of <a href="#">Google.com</a></span> 
+                </div>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-md-3 t-card-1 mx-2 border-top">
+            <div class="card d-flex mx-auto border-0 px-2">
+                <div class="card-image"> 
+                    <img class="img-fluid d-flex mx-auto" src=" "> 
+                </div>
+                <div class="card-text">
+                    <div class="card-title text-center my-4  text-primary">SAP B1</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer text-center my-3"> 
+                    <span id="name">Angellia Miller<br></span> 
+                    <span id="position">CEO of <a href="#">Facebook.com</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-md-3 t-card-1 mx-2 border-top">
+            <div class="card d-flex mx-auto border-0 px-2">
+                <div class="card-image"> 
+                    <img class="img-fluid d-flex mx-auto" src=" "> 
+                </div>
+                <div class="card-text">
+                    <div class="card-title text-center my-4  text-primary">S4 HANA</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer text-center my-3"> 
+                    <span id="name">Christina Williams<br></span> 
+                    <span id="position">UX Designer at <a href="#">Youtube.com</a></span> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+{%endblock%}

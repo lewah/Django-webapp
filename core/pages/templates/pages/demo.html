@@ -1,0 +1,86 @@
+{% extends "pages/base.html" %}
+
+{% load static %} 
+
+{% block content %}
+<section class="hero">
+    <div class="px-4 py-5  text-center"
+    style="height: 297px;">
+         <!-- pagination section -->
+        <h1 class="display-5 fw-bold col-lg-6 mx-auto">APPLY FOR A FREE DEMO</h1>
+        <ol class="breadcrumb bg-transparent justify-content-center py-3">
+          <li class="breadcrumb-item">
+            <a href="{% url 'home'%}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item "> Free Demo</li>
+        </ol>
+      </div>
+</section>
+
+<section>
+  <div class="px-4 mt-5 text-center text-primary">
+    <h3 class="fw-bold col-lg-6 mx-auto">GET A DEMO SIMPLY FILL OUT THE FORM</h3>
+  </div>
+</section>
+  <!-- 
+  <form action="/your-name/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input id="your_name" type="text" name="your_name" maxlength="100" required>
+    <input type="submit" value="OK">
+</form> 
+-->
+</section>
+<section id="cover" class="">
+  <div id="cover-caption">
+      <div class="container">
+          <div class="row ">
+              <!-- <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4"> -->
+              <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form ">
+                  <div class="px-2">
+                      <form action="/demo-form/" class="justify-content-center" method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                          <div class="form-group ">
+                            <label for="inputAddress">Full Name:</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Full name">
+                          </div>
+                          <div class="form-group ">
+                            <label for="inputAddress">Email:</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Email address">
+                          </div>
+                          <div class="form-group ">
+                            <label for="inputAddress2">Company Name:</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Company being represented">
+                          </div>
+                          <div class="form-group ">
+                            <label for="inputAddress2">Phone Number:</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Phone number">
+                          </div>
+                          <div class="form-group ">
+                            <label for="inputAddress2">Position:</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Position you hold in the company">
+                          </div>
+                          <div class="form-group ">
+                              <label for="inputState">Demo on:</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Business By Design(BYD)</option>
+                                <option>S4HANNA</option>
+                                <option>Amazon Web Service(AWS)</option>
+                                <option>Business One(B1)</option>
+                              </select>
+                          </div>
+                          <button type="submit" class="btn btn-primary ">Schedule Demo</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{%endblock%}
