@@ -49,26 +49,26 @@
                                                 <a class="dropdown-item" href="{% url 'aboutus' %}">About Us</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="{% url 'team' %}">Meet the team</a>
+                                                {% comment %} <a class="dropdown-item" href="{% url 'team' %}">Meet the team</a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="{% url 'gallery' %}">Our Gallery</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="{% url 'patner' %}">Our Patners</a>
+                                                <a class="dropdown-item" href="{% url 'patner' %}">Our Patners</a> {% endcomment %}
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
                                         <!-- index is the name='' in urls.py(products)  -->
-                                        <a class="nav-link text-primary active" href="{% url 'index' %}">Products and Services</a> 
+                                        {% comment %} <a class="nav-link text-primary active" href="{% url 'index' %}">Products and Services</a>  {% endcomment %}
                                     </li>
                                     <li class="nav-item">
                                         {% comment %} solution app is used in place for services in bg {% endcomment %}
-                                        <a class="nav-link text-primary active" href="{% url 'solutions' %}">Services</a>
+                                        {% comment %} <a class="nav-link text-primary active" href="{% url 'solutions' %}">Services</a> {% endcomment %}
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-primary active" href="{% url 'blogs' %}">Blog</a>
+                                        {% comment %} <a class="nav-link text-primary active" href="{% url 'blogs' %}">Blog</a> {% endcomment %}
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link text-primary active " aria-current="page" href="{% url 'demo' %}">Free Demo</a>
@@ -179,10 +179,10 @@
                                     <a href="#!" class="text-reset">Pricing</a>
                                 </p>
                                 <p>
-                                    <a href="{% url 'index' %}" class="text-reset">Products and Services</a>
+                                    {% comment %} <a href="{% url 'index' %}" class="text-reset">Products and Services</a> {% endcomment %}
                                 </p>
                                 <p>
-                                    <a href="{% url 'solutions' %}" class="text-reset">Solutions</a>
+                                    {% comment %} <a href="{% url 'solutions' %}" class="text-reset">Solutions</a> {% endcomment %}
                                 </p>
                             </div>
                             <!-- Grid column -->
